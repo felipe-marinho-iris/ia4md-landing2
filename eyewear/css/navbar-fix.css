@@ -1,0 +1,75 @@
+/* Correções de layout e responsividade para a barra de navegação */
+
+/* Ajuste do espaçamento e posicionamento geral */
+.navbar {
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Ajuste da disposição dos itens para evitar sobreposição */
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding-right: 80px; /* Espaço maior para o botão de menu lateral */
+    max-width: calc(100% - 30px);
+}
+
+/* Ajustes específicos para o botão de inscrição */
+.nav-item.nav-btn {
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+/* Ajuste do botão de menu lateral para não sobrepor outros elementos */
+.sidemenu_btn {
+    position: fixed;
+    right: 15px;
+    top: 25px;
+    z-index: 1100;
+}
+
+/* Ajuste do container do navbar collapse para dar mais espaço */
+#navbarSupportedContent {
+    margin-right: 20px;
+}
+
+/* Remover estilos desnecessários para botão de hamburguer já que usamos o sidemenu_toggle */
+
+/* Media queries para responsividade */
+@media (max-width: 991px) {
+    .navbar-nav {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .nav-item.nav-btn {
+        margin: 10px 0;
+        margin-right: 60px;
+    }
+    
+    /* Ajustar posição do botão de menu em telas menores */
+    .sidemenu_btn {
+        top: 25px;
+        right: 10px;
+    }
+    
+    /* Ajuste do container para dispositivos móveis */
+    .navbar .container {
+        padding-right: 90px;
+    }
+    
+    .navbar-collapse {
+        padding-right: 30px;
+    }
+}
+
+/* Correção para telas muito pequenas */
+@media (max-width: 575px) {
+    .navbar-brand {
+        max-width: 180px;
+    }
+}

@@ -1,0 +1,17 @@
+/* Remover componente elíptico desnecessário nos depoimentos */
+.testimonial-author-info h5::after,
+.testimonial-author-info h5::before,
+.testimonial-author::after {
+    display: none !important;
+}
+
+/* Garantir que não haja elementos absolutos posicionados nos depoimentos */
+.testimonial-section .item {
+    position: relative;
+    overflow: visible;
+}
+
+.testimonial-section .item::before,
+.testimonial-section .item::after {
+    display: none !important;
+}

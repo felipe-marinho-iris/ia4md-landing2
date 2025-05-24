@@ -1,0 +1,539 @@
+/* IA para Médicos - CSS Personalizado */
+
+:root {
+    --primary-color: #0D1B2A;     /* Azul profundo - Fundo principal, seções de destaque */
+    --secondary-color: #00C9A7;   /* Ciano digital - Botões, links, elementos interativos */
+    --dark-color: #1C1C1C;        /* Grafite escuro - Áreas de fundo secundárias */
+    --accent-color: #F4C95D;      /* Dourado champagne - Detalhes de destaque */
+    --text-color: #FFFFFF;        /* Branco para melhor contraste - Texto principal */
+    --text-color-muted: #E4E4E4;  /* Cinza claro - Texto secundário */
+}
+
+/* Estilos Gerais */
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-color);
+    background-color: var(--primary-color);
+    line-height: 1.8;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-color);
+}
+
+a {
+    color: var(--secondary-color);
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
+/* Botões */
+.btn-primary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: var(--dark-color);
+    font-weight: 600;
+    border-radius: 30px;
+    padding: 12px 30px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: var(--dark-color);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+    font-weight: 600;
+    border-radius: 30px;
+    padding: 12px 30px;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: var(--secondary-color);
+    color: var(--dark-color);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar */
+.navigation-bar {
+    background-color: var(--primary-color);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav .nav-link {
+    color: var(--text-color);
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover, 
+.navbar-nav .nav-link.active {
+    color: var(--secondary-color);
+}
+
+/* Hero Section */
+.banner-section {
+    background-color: var(--primary-color);
+    position: relative;
+    padding: 100px 0;
+}
+
+.banner-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(45deg, rgba(13, 27, 42, 0.8), rgba(13, 27, 42, 0.95));
+    z-index: 1;
+}
+
+.banner-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.banner-section h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.banner-section h5 {
+    color: var(--secondary-color);
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+/* Seções */
+section {
+    padding: 80px 0;
+}
+
+.section-title {
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.section-title h5 {
+    color: var(--secondary-color);
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+/* História */
+.story-section {
+    background-color: var(--dark-color);
+    position: relative;
+}
+
+.story-section .quote {
+    font-style: italic;
+    border-left: 4px solid var(--secondary-color);
+    padding-left: 20px;
+    margin: 20px 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.story-section .text {
+    color: var(--text-color);
+    font-size: 1.05rem;
+    margin-bottom: 1rem;
+}
+
+/* Workshop */
+.workshop-section {
+    background-color: var(--primary-color);
+}
+
+.workshop-item {
+    margin-bottom: 30px;
+    padding: 30px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    background-color: rgba(28, 28, 28, 0.5);
+    border: 1px solid rgba(0, 201, 167, 0.1);
+}
+
+.workshop-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    border-color: var(--text-color);
+}
+
+.workshop-item i {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+}
+
+.workshop-item h4 {
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--accent-color);
+}
+
+/* Público */
+.audience-section {
+    background-color: var(--dark-color);
+}
+
+.audience-section h3,
+.audience-section h5,
+.audience-section p,
+.audience-section li {
+    color: var(--text-color);
+}
+
+.audience-section li {
+    margin-bottom: 10px;
+}
+
+.audience-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.audience-list li {
+    padding: 10px 0;
+    position: relative;
+    padding-left: 30px;
+}
+
+.audience-list li:before {
+    content: '✓';
+    color: var(--secondary-color);
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+
+/* Benefícios */
+.benefits-section {
+    background-color: var(--primary-color);
+}
+
+.benefit-card {
+    background-color: rgba(28, 28, 28, 0.5);
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    height: 100%;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 201, 167, 0.1);
+}
+
+.benefit-card:hover {
+    border-color: var(--secondary-color);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-card i {
+    font-size: 2rem;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+}
+
+/* Depoimentos */
+.testimonial-section {
+    background-color: var(--dark-color);
+    padding: 80px 0;
+    position: relative;
+}
+
+.testimonial-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, rgba(0, 201, 167, 0.05) 0%, rgba(13, 27, 42, 0) 70%);
+    z-index: 0;
+}
+
+.testimonial-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+.testimonial {
+    background-color: rgba(13, 27, 42, 0.7);
+    border-radius: 8px;
+    padding: 25px 20px;
+    margin: 10px;
+    position: relative;
+    border: 1px solid rgba(0, 201, 167, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.testimonial:hover {
+    transform: translateY(-5px);
+    border-color: var(--secondary-color);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.testimonial:before {
+    content: '\201C';
+    font-size: 5rem;
+    color: var(--secondary-color);
+    position: absolute;
+    top: 0px;
+    left: 25px;
+    opacity: 0.15;
+    line-height: 1;
+}
+
+.testimonial .text.subheading {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-style: italic;
+    flex-grow: 1;
+    position: relative;
+    padding-left: 10px;
+}
+
+.testimonial .text.subheading::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 5px;
+    bottom: 5px;
+    width: 3px;
+    background-color: var(--secondary-color);
+    opacity: 0.5;
+    border-radius: 3px;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    padding-top: 20px;
+    position: relative;
+}
+
+.testimonial-author::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(0, 201, 167, 0.05) 0%, rgba(0, 201, 167, 0.5) 50%, rgba(0, 201, 167, 0.05) 100%);
+}
+
+.testimonial-author img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 2px solid var(--secondary-color);
+    object-fit: cover;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-author-info h5 {
+    margin-bottom: 5px;
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.testimonial-author-info p {
+    color: var(--secondary-color);
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.testimonial-carousel .owl-dots {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.testimonial-carousel .owl-dot {
+    display: inline-block;
+    margin: 0 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(0, 201, 167, 0.3);
+    transition: all 0.3s ease;
+}
+
+.testimonial-carousel .owl-dot.active {
+    background-color: var(--secondary-color);
+    transform: scale(1.2);
+}
+
+/* Investimento */
+.pricing-section {
+    background-color: var(--primary-color);
+    position: relative;
+}
+
+.pricing-card {
+    background-color: rgba(28, 28, 28, 0.5);
+    border-radius: 10px;
+    padding: 40px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 201, 167, 0.1);
+    height: 100%;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--secondary-color);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.pricing-card .price {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin: 20px 0;
+}
+
+.pricing-card .price small {
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.pricing-features {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 30px;
+}
+
+.pricing-features li {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(228, 228, 228, 0.1);
+}
+
+.pricing-features li:last-child {
+    border-bottom: none;
+}
+
+/* Garantia */
+.guarantee-section {
+    background-color: var(--dark-color);
+    padding: 40px 0;
+}
+
+.guarantee-badge {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--dark-color);
+    font-weight: 700;
+    padding: 15px 30px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    padding: 60px 0 30px;
+    text-align: center;
+}
+
+footer .social-icons {
+    margin-bottom: 30px;
+}
+
+footer .social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: rgba(228, 228, 228, 0.1);
+    border-radius: 50%;
+    margin: 0 5px;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    background-color: var(--secondary-color);
+    color: var(--dark-color);
+    transform: translateY(-3px);
+}
+
+/* Animações */
+.fadeIn {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+    .banner-section h1 {
+        font-size: 2.5rem;
+    }
+    
+    .section-title h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 60px 0;
+    }
+    
+    .banner-section {
+        padding: 80px 0;
+    }
+    
+    .banner-section h1 {
+        font-size: 2rem;
+    }
+    
+    .section-title h2 {
+        font-size: 1.8rem;
+    }
+    
+    .workshop-item, .benefit-card, .pricing-card {
+        margin-bottom: 20px;
+    }
+}

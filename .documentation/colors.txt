@@ -1,0 +1,26 @@
+#0D1B2A
+	•	Significado: Profundidade, confiança, presença forte.
+	•	Uso: Fundo principal, seções de destaque, cabeçalho.
+
+2. Cor secundária – Ciano digital futurista
+
+#00C9A7
+	•	Significado: Inovação, tecnologia, energia moderna.
+	•	Uso: Botões, ícones, links, gráficos interativos.
+
+3. Cor de apoio – Grafite escuro elegante
+
+#1C1C1C
+	•	Significado: Luxo, sofisticação, base neutra.
+	•	Uso: Áreas de fundo secundárias, caixas de conteúdo.
+
+4. Cor de contraste – Champagne dourado fosco
+
+#F4C95D
+	•	Significado: Prestígio, destaque, toques mágicos de insight.
+	•	Uso: Detalhes premium, bordas, chamadas de atenção discretas.
+
+5. Texto principal – Cinza-claro de alto contraste
+
+#E4E4E4
+	•	Uso: Textos em fundo escuro, garante legibilidade sem ser branco puro.

@@ -1,0 +1,60 @@
+# Plano de Reformulação da Landing Page - IA para Médicos
+
+## Tarefas:
+
+1. Atualizar a estrutura HTML base mantendo o layout responsivo
+   - Adaptar a navegação para as novas seções
+   - Substituir logotipo e imagens
+   - Implementar a nova paleta de cores
+
+2. Criar as seções conforme o documento de estrutura
+   - Header principal com chamada para ação
+   - História por trás do encontro
+   - O que será experimentado no workshop
+   - Quem deveria participar
+   - O que os participantes levarão
+   - Depoimentos
+   - Investimento e garantia
+   - CTA final
+
+3. Aplicar a nova paleta de cores
+   - Azul profundo (#0D1B2A) - Fundo principal, seções de destaque
+   - Ciano digital (#00C9A7) - Botões, links, elementos interativos
+   - Grafite escuro (#1C1C1C) - Áreas de fundo secundárias
+   - Dourado champagne (#F4C95D) - Detalhes de destaque
+   - Cinza claro (#E4E4E4) - Texto principal
+
+4. Substituir imagens e conteúdos
+   - Buscar/criar imagens relacionadas à medicina e tecnologia
+   - Adaptar os ícones para contexto médico/tecnológico
+
+5. Atualizar os estilos CSS
+   - Criar um arquivo de CSS personalizado
+   - Adaptar animações e transições
+
+6. Testar responsividade
+   - Verificar comportamento em diferentes dispositivos
+   - Ajustar conforme necessário
+
+7. Finalizar e otimizar
+   - Verificar links e botões
+   - Revisar textos e ortografia
+   - Validar código HTML/CSS
+
+## Status:
+[X] Iniciado
+[X] Estrutura HTML adaptada
+[X] Seções criadas
+[X] Paleta de cores aplicada
+[X] CSS atualizado
+[X] Problemas de contraste corrigidos
+[X] Nova versão limpa criada (index-ia4md-v2.html)
+[ ] Imagens substituídas (Pendente: Adicionar imagens reais)
+[ ] Responsividade testada
+[ ] Finalizado
+
+## Próximos passos:
+1. Substituir as imagens temporárias por imagens reais relacionadas a médicos e tecnologia
+2. Testar a landing page em diferentes dispositivos para garantir responsividade
+3. Fazer ajustes finais de performance e otimização
+4. Verificar todos os links e formulários para garantir funcionalidade
